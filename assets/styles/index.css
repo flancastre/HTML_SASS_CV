@@ -110,7 +110,6 @@ aside {
   background: var(--background);
   border-right: 1px solid var(--border);
   padding: 5rem;
-  min-height: 1500px;
 }
 aside .block {
   margin-bottom: 5rem;
