@@ -3,6 +3,7 @@
     grid: 
     "picture header" auto
     "aside main" 1fr
+    "footer footer" auto
     / 350px auto;
     min-height: 100vh;
 }
@@ -156,6 +157,64 @@ main {
                 margin: 2rem 0; 
                 list-style: circle;
                 padding-left: 4rem;
+            }
+        }
+    }
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 5rem;
+    background: var(--text);
+    h2 {
+        margin-bottom: 3rem;
+    }
+
+    form {
+        display: flex;
+        align-items: center;
+
+         .prefix {
+                background: linear-gradient(to right, var(--dark), var(--light));
+                padding: 1rem 2rem;
+                color: white;
+                font-size: 2rem;
+                border-top-left-radius: 0.5rem;
+                border-bottom-left-radius: 0.5rem;
+            }
+
+            button {
+                background: var(--text);
+                border: 0;
+                cursor: pointer;
+                transition: 0.2s;
+                &:hover {
+                    opacity: 0.8;
+                }
+                .postfix {
+                    background: linear-gradient(to right, var(--dark), var(--light));
+                    padding: 1rem 2rem;
+                    color: white;
+                    font-size: 2rem;
+                    border-top-right-radius: 0.5rem;
+                    border-bottom-right-radius: 0.5rem;
+                }
+            }
+         
+        input {
+            line-height: 2rem;
+            border: 0;
+            outline: 0;
+            min-width: 400px ;
+            padding: 1rem 2rem;
+            &::placeholder {
+                color: var(--text);
             }
         }
     }
